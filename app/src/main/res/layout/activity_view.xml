@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F6F6F8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="36px">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rounded_items"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="29px"
+            android:layout_marginStart="29px">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bttn_star"
+                android:layout_marginTop="13px"/>
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18px"
+                android:text="Антифриз на разлив"
+                android:textSize="20sp"
+                android:fontFamily="@font/nunitosans_7pt_semibold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="18px">
+
+            <TextView
+                android:id="@+id/codeLabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Код:"
+                android:textColor="#757A8C"
+                android:textSize="16sp"
+                android:layout_marginStart="122px"
+                android:fontFamily="@font/nunitosans_7pt_semibold"/>
+
+            <TextView
+                android:id="@+id/codeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10px"
+                android:layout_marginTop="5px"
+                android:textSize="16sp"
+                android:text="1234567891234     114л"
+                android:fontFamily="@font/nunitosans_7pt_semibold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_rounded_price"
+            android:layout_marginStart="122px"
+            android:layout_marginTop="12px"
+            android:layout_marginBottom="20px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/priceTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="244c"
+                android:textSize="16sp"
+                android:layout_marginEnd="122px"
+                android:layout_marginTop="14px"
+                android:layout_marginStart="30px"
+                android:layout_marginBottom="14px"
+                android:fontFamily="@font/nunitosans_7pt_semibold"/>
+
+            <TextView
+                android:id="@+id/unitTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="л"
+                android:textColor="#757A8C"
+                android:layout_marginEnd="20px"
+                android:layout_marginTop="13px"
+                android:fontFamily="@font/nunitosans_7pt_semibold"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
